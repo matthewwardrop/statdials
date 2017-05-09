@@ -10,7 +10,7 @@ from pylatex.tikz import TikZ
 
 
 class StatDial(CommandBase):
-    packages = [Package('statdial')]
+    packages = [Package('statdials')]
     _latex_name = 'statdial'
     _default_escape = False
 
@@ -25,7 +25,7 @@ class StatDials(object):
         if filename is None:
             filename = os.path.join(tempfile.mkdtemp(), 'standalone')
 
-        shutil.copyfile(os.path.join(os.path.dirname(__file__), 'statdial.sty'), os.path.join(os.path.dirname(os.path.abspath(filename)), 'statdial.sty'))
+        shutil.copyfile(os.path.join(os.path.dirname(__file__), 'statdials.sty'), os.path.join(os.path.dirname(os.path.abspath(filename)), 'statdials.sty'))
 
         standalone = Document(filename, documentclass='standalone')
 
