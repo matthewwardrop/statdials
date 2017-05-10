@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name='statdials',
     description="LaTeX and Python library to create cute graphical metric dials.",
-    version="0.1.1",  # remove git revision if present
+    version="0.1.2",  # remove git revision if present
     author="Matthew Wardrop",
     author_email="mister.wardrop@gmail.com",
     packages=['statdials'],
